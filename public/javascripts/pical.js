@@ -44,6 +44,9 @@ function makeApiCall() {
     request.execute(function(resp) {
       for (var i = 0; i < resp.items.length; i++) {
         var li = document.createElement('li');
+	//var input = document.createElement('input');
+	//input.setAttribute(
+	//li.appendChild
         li.appendChild(document.createTextNode(resp.items[i].summary));
         document.getElementById('calendars').appendChild(li);
       }
