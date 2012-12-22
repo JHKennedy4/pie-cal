@@ -1,12 +1,11 @@
 {
-  "name": "application-name",
+  "name": "PiCal",
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "0.8.x",
-    "npm":  "1.1.x"
+    "node": "0.8.*",
+    "npm":  "1.1.*"
   }
-
   "scripts": {
     "start": "node app"
   },
@@ -14,5 +13,4 @@
     "express": "3.0.4",
     "jade": "*"
   }
-  
 }
