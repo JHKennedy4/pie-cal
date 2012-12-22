@@ -1,7 +1,7 @@
 // localhost:3000 Id
-var clientId = '696625463505-9famicpkg8psvphlhdg7159cbre0ra3t.apps.googleusercontent.com';
+//var clientId = '696625463505-9famicpkg8psvphlhdg7159cbre0ra3t.apps.googleusercontent.com';
 // heroku Id
-// var clientId = '696625463505.apps.googleusercontent.com';
+ var clientId = '696625463505.apps.googleusercontent.com';
 var apiKey = 'AIzaSyCzYW7xXOgWTl2OZ_hYrox5jg0kYeggY9E';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
