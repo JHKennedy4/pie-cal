@@ -1,4 +1,7 @@
-var clientId = '696625463505.apps.googleusercontent.com';
+// localhost:3000 Id
+var clientId = '696625463505-9famicpkg8psvphlhdg7159cbre0ra3t.apps.googleusercontent.com';
+// heroku Id
+// var clientId = '696625463505.apps.googleusercontent.com';
 var apiKey = 'AIzaSyCzYW7xXOgWTl2OZ_hYrox5jg0kYeggY9E';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
@@ -35,15 +38,14 @@ function handleAuthClick(event) {
 // the magic
 function makeApiCall() {
   gapi.client.load('calendar', 'v3', function() {
-    var request = gapi.client.calendar.events.list({
-      'calendarId': 'primary'
-    });
+    var request = gapi.client.calendar.calendarList.list(
+    );
           
     request.execute(function(resp) {
       for (var i = 0; i < resp.items.length; i++) {
         var li = document.createElement('li');
         li.appendChild(document.createTextNode(resp.items[i].summary));
-        document.getElementById('events').appendChild(li);
+        document.getElementById('calendars').appendChild(li);
       }
     });
   });
