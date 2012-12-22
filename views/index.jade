@@ -3,6 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}, a new way of looking at your day.
-  //a(href='#' id='authorize-button' onClick='handleAuthClick();') Login
+  a(href='#', id='authorize-button', onClick='handleAuthClick();') Login
   script(src="/javascripts/pical.js")
   script(src="https://apis.google.com/js/client.js?onload=handleClientLoad")
