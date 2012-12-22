@@ -1,5 +1,5 @@
 var clientId = 'YOUR_CLIENT_ID';
-var apiKey = 'YOUR_API_KEY';
+var apiKey = 'AIzaSyCzYW7xXOgWTl2OZ_hYrox5jg0kYeggY9E';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
 function handleClientLoad() {
